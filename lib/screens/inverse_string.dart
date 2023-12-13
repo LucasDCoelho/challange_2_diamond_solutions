@@ -34,7 +34,7 @@ class _InverseStringState extends State<InverseString> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("MMostrar uma string invertida", style: TextStyle(
+          title: const Text("Mostrar uma string invertida", style: TextStyle(
             fontSize: 21,
           ),),
         ),
