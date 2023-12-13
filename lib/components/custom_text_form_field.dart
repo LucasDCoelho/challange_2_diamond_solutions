@@ -3,7 +3,7 @@ import "package:flutter/services.dart";
 
 class CustomTextFormField extends StatelessWidget {
   final TextEditingController controller;
-  final TextInputType keyboardType;
+  final TextInputType? keyboardType;
   final int? maxLength;
   final void Function(String)? onChange;
   final String? Function(String?)? validator;
@@ -17,8 +17,9 @@ class CustomTextFormField extends StatelessWidget {
     this.maxLength,
     this.decoration,
     this.inputFormatters,
+    this.keyboardType,
     required this.controller,
-    required this.keyboardType,
+
   });
 
   @override
@@ -28,7 +29,7 @@ class CustomTextFormField extends StatelessWidget {
         SizedBox(
           width: width,
           child: TextFormField(
-            inputFormatters: [],
+            inputFormatters: inputFormatters,
             controller: controller,
             keyboardType: keyboardType,
             maxLength: maxLength,

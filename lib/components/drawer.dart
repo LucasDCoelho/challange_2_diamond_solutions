@@ -4,6 +4,7 @@ import 'package:desafio_2/screens/all_numbers_until_reach.dart';
 import 'package:desafio_2/screens/can_you_vote.dart';
 import 'package:desafio_2/screens/day_of_weekend.dart';
 import 'package:desafio_2/screens/sum_all_numbers.dart';
+import 'package:desafio_2/screens/sum_numbers_less_than_30.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/odd_or_even.dart';
@@ -90,10 +91,18 @@ class _DrawerNavBarState extends State<DrawerNavBar> {
           ),
           ListTile(
             leading: const Icon(Icons.casino),
-            title: const Text("Mostrar os numero ímpares "),
+            title: const Text("Mostrar os numero ímpares"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const AllNumbersEven()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.casino),
+            title: const Text("Soma dos numeros menor que 30"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const SumNumberLessThan30()));
             },
           ),
         ],
