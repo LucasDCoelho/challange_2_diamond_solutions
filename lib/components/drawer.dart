@@ -3,6 +3,7 @@ import 'package:desafio_2/screens/all_numbers_even.dart';
 import 'package:desafio_2/screens/all_numbers_until_reach.dart';
 import 'package:desafio_2/screens/can_you_vote.dart';
 import 'package:desafio_2/screens/day_of_weekend.dart';
+import 'package:desafio_2/screens/first_last_upper_case.dart';
 import 'package:desafio_2/screens/inverse_string.dart';
 import 'package:desafio_2/screens/sum_all_numbers.dart';
 import 'package:desafio_2/screens/sum_numbers_less_than_30.dart';
@@ -121,6 +122,14 @@ class _DrawerNavBarState extends State<DrawerNavBar> {
             onTap: () {
               Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const InverseString()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.casino),
+            title: const Text("Mostar a primeira e ultima maiuscula"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const FirstLastUpperCase()));
             },
           ),
         ],
