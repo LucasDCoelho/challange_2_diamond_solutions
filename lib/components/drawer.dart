@@ -5,6 +5,7 @@ import 'package:desafio_2/screens/can_you_vote.dart';
 import 'package:desafio_2/screens/day_of_weekend.dart';
 import 'package:desafio_2/screens/sum_all_numbers.dart';
 import 'package:desafio_2/screens/sum_numbers_less_than_30.dart';
+import 'package:desafio_2/screens/numbers_more_than_50.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/odd_or_even.dart';
@@ -103,6 +104,14 @@ class _DrawerNavBarState extends State<DrawerNavBar> {
             onTap: () {
               Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const SumNumberLessThan30()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.casino),
+            title: const Text("Mostrar numeros maiores que 50"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const NumbersMoreThan50()));
             },
           ),
         ],
