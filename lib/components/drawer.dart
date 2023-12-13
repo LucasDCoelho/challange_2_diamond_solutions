@@ -3,6 +3,7 @@ import 'package:desafio_2/screens/all_numbers_even.dart';
 import 'package:desafio_2/screens/all_numbers_until_reach.dart';
 import 'package:desafio_2/screens/can_you_vote.dart';
 import 'package:desafio_2/screens/day_of_weekend.dart';
+import 'package:desafio_2/screens/inverse_string.dart';
 import 'package:desafio_2/screens/sum_all_numbers.dart';
 import 'package:desafio_2/screens/sum_numbers_less_than_30.dart';
 import 'package:desafio_2/screens/numbers_more_than_50.dart';
@@ -112,6 +113,14 @@ class _DrawerNavBarState extends State<DrawerNavBar> {
             onTap: () {
               Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> const NumbersMoreThan50()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.casino),
+            title: const Text("Mostrar uma string invertida"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const InverseString()));
             },
           ),
         ],
